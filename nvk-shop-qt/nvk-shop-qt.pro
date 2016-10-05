@@ -4,18 +4,18 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core  widgets location positioning network
 
 TARGET = nvk-shop-qt
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        NVKMainWindow.cpp
+        NVKMainWindow.cpp \
+    NetworkHandler.cpp
 
-HEADERS  += NVKMainWindow.h
+HEADERS  += NVKMainWindow.h \
+    NetworkHandler.h
 
 FORMS    += nvkmainwindow.ui
 

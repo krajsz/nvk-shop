@@ -1,21 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>NVKMainWindow</class>
- <widget class="QMainWindow" name="NVKMainWindow" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="NVKMainWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>480</height>
+    <width>516</width>
+    <height>319</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>NVKMainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="requestThingsButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>120</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RequestThings</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="replyLabel">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>260</y>
+      <width>181</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
