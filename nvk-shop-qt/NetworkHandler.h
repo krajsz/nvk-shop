@@ -20,7 +20,7 @@ private:
     QNetworkRequest* m_HttpRequest;
 
 Q_SIGNALS:
-
+    void readyRead(const QString& data);
 public Q_SLOTS:
     void sendRequest();
 

@@ -33,6 +33,7 @@ NetworkHandler::~NetworkHandler()
 void NetworkHandler::replyReadyRead()
 {
     qDebug() << "Ready to read!";
+    emit readyRead(m_HttpReply->header(QNetworkRequest::ServerHeader).toString());
     qDebug() << m_HttpReply->header(QNetworkRequest::ServerHeader).toString();
 }
 

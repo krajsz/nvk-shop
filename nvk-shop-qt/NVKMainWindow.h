@@ -16,6 +16,8 @@ public:
     explicit NVKMainWindow(QWidget *parent = 0);
     ~NVKMainWindow();
 
+private Q_SLOTS:
+    void setReplyLabel(const QString& label);
 private:
     Ui::NVKMainWindow *ui;
     NetworkHandler* m_NetworkHandler;
